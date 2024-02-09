@@ -1,15 +1,15 @@
 name:                metalborn-api
 version:             0.1.0.0
-github:              "tam-carre/metalborn"
+github:              "mtamc/metalborn"
 license:             BSD3
-author:              "Tam CARRE"
-maintainer:          "Tam CARRE"
-copyright:           "2022 Tam CARRE"
+author:              "mtamc"
+maintainer:          "mtamc"
+copyright:           "2022 mtamc"
 
 extra-source-files:
 - README.md
 
-description:         Please see the README on GitHub at <https://github.com/tam-carre/metalborn#readme>
+description:         Please see the README on GitHub at <https://github.com/mtamc/metalborn#readme>
 
 dependencies:
 - base-noprelude
@@ -77,6 +77,7 @@ ghc-options:
 - -Wmissing-home-modules
   #- -Wpartial-fields
 - -Wredundant-constraints
+- -Wunused-packages
 
 library:
   source-dirs: src

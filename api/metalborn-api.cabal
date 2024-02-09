@@ -1,17 +1,17 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.35.0.
+-- This file has been generated from package.yaml by hpack version 0.35.2.
 --
 -- see: https://github.com/sol/hpack
 
 name:           metalborn-api
 version:        0.1.0.0
-description:    Please see the README on GitHub at <https://github.com/tam-carre/metalborn#readme>
-homepage:       https://github.com/tam-carre/metalborn#readme
-bug-reports:    https://github.com/tam-carre/metalborn/issues
-author:         Tam CARRE
-maintainer:     Tam CARRE
-copyright:      2022 Tam CARRE
+description:    Please see the README on GitHub at <https://github.com/mtamc/metalborn#readme>
+homepage:       https://github.com/mtamc/metalborn#readme
+bug-reports:    https://github.com/mtamc/metalborn/issues
+author:         mtamc
+maintainer:     mtamc
+copyright:      2022 mtamc
 license:        BSD3
 license-file:   LICENSE
 build-type:     Simple
@@ -20,7 +20,7 @@ extra-source-files:
 
 source-repository head
   type: git
-  location: https://github.com/tam-carre/metalborn
+  location: https://github.com/mtamc/metalborn
 
 library
   exposed-modules:
@@ -57,7 +57,7 @@ library
       DataKinds
       TypeOperators
       TypeFamilies
-  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wredundant-constraints
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wredundant-constraints -Wunused-packages
   build-depends:
       QuickCheck
     , aeson
@@ -134,7 +134,7 @@ executable metalborn-api-codegen
       DataKinds
       TypeOperators
       TypeFamilies
-  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wredundant-constraints -main-is App.Elm -threaded -rtsopts -with-rtsopts=-N -fwrite-ide-info
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wredundant-constraints -Wunused-packages -main-is App.Elm -threaded -rtsopts -with-rtsopts=-N -fwrite-ide-info
   build-depends:
       QuickCheck
     , aeson
@@ -212,7 +212,7 @@ executable metalborn-api-exe
       DataKinds
       TypeOperators
       TypeFamilies
-  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N -fwrite-ide-info
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wredundant-constraints -Wunused-packages -threaded -rtsopts -with-rtsopts=-N -fwrite-ide-info
   build-depends:
       QuickCheck
     , aeson
@@ -278,7 +278,7 @@ test-suite metalborn-api-test
       DataKinds
       TypeOperators
       TypeFamilies
-  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wredundant-constraints -Wunused-packages -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       QuickCheck
     , aeson
