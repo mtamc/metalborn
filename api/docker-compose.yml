@@ -13,4 +13,5 @@ services:
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: postgres
     volumes:
+      - ./docker/dbSchema.sql:/docker-entrypoint-initdb.d/dbSchema.sql
       - /root/database:/var/lib/postgresql/data

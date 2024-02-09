@@ -5,20 +5,33 @@ on:
 jobs:
   fe-and-be-checks:
     runs-on: ubuntu-latest
+    permissions:
+      checks: write
 
     steps:
     - uses: actions/checkout@v2
 
     - name: Setup docker compose (run Postgres DB)
-      uses: yu-ichiro/spin-up-docker-compose-action@v1
-      with:
-        file: ./api/docker-compose.yml
+      run: |
+        docker compose -f ./docker-compose.yml up -d
+      working-directory: ./api
+
+    - name: Print Postgres logs
+      run: |
+        sleep 20
+        docker ps -a
+        docker compose -f ./docker-compose.yml logs
+      working-directory: ./api
+
+    - name: Check files
+      run: |
+        ls -l ./api/docker
 
     - name: Install GHC and Cabal
       uses: haskell/actions/setup@v2
       id: setup-ghc-cabal
       with:
-        ghc-version: '9.2.4'
+        ghc-version: '9.4.8'
 
     - name: cabal freeze
       run: cabal freeze
@@ -53,6 +66,10 @@ jobs:
       run: npm i
       working-directory: ./webapp
 
+    - name: downgrade to npm 8
+      run: npm i -g npm@8 --registry=https://registry.npmjs.org
+
+    # requires npm <=8.x
     - name: Copy `elm`, `elm-review`, `elm-format` to GitHub PATH
       run: npm bin >> $GITHUB_PATH
       working-directory: ./webapp
@@ -68,7 +85,7 @@ jobs:
       working-directory: ./api
 
     - name: Check Elm code is linted with `elm-review`
-      uses: sparksp/elm-review-action@v1.0.9
+      uses: sparksp/elm-review-action@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
