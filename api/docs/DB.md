@@ -7,7 +7,7 @@ You can just run the docker container as explained in [`../api/README.md`](../ap
 
 ## Normalization & SQL constraints
 
-Character data is fully normalized, which is no simple task if we wants to make
+Character data is fully normalized, which is no simple task if we want to make
 illegal states unrepresentable at the DB level.
 
 The core component of the Character product type is this complex sum type:
