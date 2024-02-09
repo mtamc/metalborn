@@ -23,4 +23,4 @@ Character generation is fully handled by the API server.
 
 Documentation exists for both the Elm and Haskell codebases in [/webapp/](./webapp/) and [/api/](./api/) including how to run locally, techniques and conventions used, endpoint breakdown etc.
 
-There is a CI pipeline that runs Haskell and Elm builds, tests, formatting and linting checks. Past PRs and jobs were unfortunately lost after moving this repo to a new account.
+There is a CI pipeline that runs Haskell and Elm builds, tests, formatting and linting checks. Past PRs making use of the CI pipeline were lost after moving this repo to a new account, but [you can still view an example of pipeline run](https://github.com/mtamc/metalborn/actions/runs/7848999649/job/21421409045).
