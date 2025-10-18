@@ -2,11 +2,9 @@
 
 ![metalborn_demo_2022-12-08](https://user-images.githubusercontent.com/1331748/206537276-5ba4d73e-4f5b-4fa7-838b-741eb35d2c8f.gif)
 
-Welcome, traveller! And thanks for checking out my pet project, whether you came
-from **[Metalborn.io](https://metalborn.io/)** itself or from my GitHub profile.
+Welcome, traveller! And thanks for checking out my pet project, whether you came from **[Metalborn.io](https://metalborn.io/)** itself or from my GitHub profile.
 
-**Metalborn.io** is a choose-your-own-adventure-style character generator set in
-the **Mistborn Era 2** universe.
+**Metalborn.io** is a choose-your-own-adventure-style character generator set in the **Mistborn Era 2** universe.
 
 Mistborn is a fantasy epic written by the amazing **Brandon Sanderson**, who I have been a fan of for nearly a decade. **Mistborn 1** is a great introduction to his works if you're looking for one. It's fun, not too long and sufficiently self-contained for a first taste! Please note **Metalborn.io contains minor spoilers for abilities and characters revealed up to Mistborn: The Bands of Mourning**.
 
