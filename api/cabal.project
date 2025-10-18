@@ -12,3 +12,5 @@ source-repository-package
 
 allow-older: *
 allow-newer: *
+constraints: hashable < 1.5
+index-state: 2024-06-01T00:00:00Z
