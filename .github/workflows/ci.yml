@@ -66,8 +66,10 @@ jobs:
       run: npm i
       working-directory: ./webapp
 
-    - name: downgrade to npm 8
-      run: npm i -g npm@8 --registry=https://registry.npmjs.org
+    - name: Setup Node.js (npm 8)
+      uses: actions/setup-node@v4
+      with:
+        node-version: '16' # ships with npm 8
 
     # requires npm <=8.x
     - name: Copy `elm`, `elm-review`, `elm-format` to GitHub PATH
