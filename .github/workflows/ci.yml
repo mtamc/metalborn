@@ -38,7 +38,7 @@ jobs:
       working-directory: ./api
 
     - name: Restore cache of ~/.cabal/store
-      uses: actions/cache@v2
+      uses: actions/cache@v3
       with:
         path: ${{ steps.setup-ghc-cabal.outputs.cabal-store }}
         key: ${{ hashFiles('./api/cabal.project.freeze') }}
